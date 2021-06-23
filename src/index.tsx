@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import './services/firebase'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +12,16 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//HTML dentro do Js => JSX 
+
+/*
+===PILARES DO REACT===
+
+react #1 => tudo é componente, peças que, juntas, formam a aplicação;
+
+react #2 => propriedades são informações passadas para funções que modificam
+o comportamento da mesma;
+
+react #3 => estado seria manter uma informação variavel dentro do componenete.
+(seria algo como o let ou const no JS)
+*/
