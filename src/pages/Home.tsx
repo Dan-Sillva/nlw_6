@@ -40,6 +40,11 @@ export function Home() {
             return;
         }
 
+        if (roomRef.val().endedAt) {
+            alert('Room already closed.')
+            return;
+        }
+
         history.push(`/rooms/${roomCode}`)
     }
 
@@ -54,7 +59,7 @@ export function Home() {
                 <div className="main-content">
                     <img src={logoImg} alt="Letmeask" />
                     <button onClick={handleCreateRoom} className="create-room">
-                        <img src={googleIconImg} alt="google image" />
+                        <img src={googleIconImg} alt="google" />
                         Crie sua sala com o google
                     </button>
                     <div className="separator">Ou entre em uma sala</div>

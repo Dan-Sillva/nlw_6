@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event'
 import { useState } from 'react'
 import { FormEvent } from 'react'
 import { Link, useHistory } from 'react-router-dom'
